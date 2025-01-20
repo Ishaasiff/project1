@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyDoc.Pk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap" rel="stylesheet" />
+</head>
+<body>
+   
+    <nav id="navbar">
+        <div class="logo">
+            EasyDoc<span>.pk</span>
+        </div>
+        <ul>
+           
+            <li class="item"><a href="#welcome-section">Home</a></li>
+            <li class="item"><a href="{{ url_for('about_us') }}">About-Us</a></li>
+            <li class="item"><a href="{{ url_for('our_doctors') }}">Our-Doctors</a></li>
+            <li class="item"><a href="{{ url_for('appointment') }}">Appointment</a></li>
+            
+        </ul>
+        <div id="login">
+            <a href="{{url_for('sign_up')}}" class="btn">sign up</a>
+            <a href="{{url_for('login')}}" class="btn">Log in</a>
+        </div>    
+    </nav>
+    <section id="welcome-section">
+       
+        <div class="heading">
+            <h1>Your Health, Just a Click Away!</h1>
+            <h4>Welcome to our Hospital Management System</h4>
+            
+            <h4>Book appointments with trusted doctors anytime,</h4>
+            <h4>anywhere. Quick, secure, and hassle-free healthcare access at your fingertips.</h4>
+
+        </div>
+    </section>
+    <section id="shop">
+        
+        <h1 class="center">Our Services</h1>
+        <div id="shop-item">
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/WhatsApp_Image_2025-01-09_at_5.17.55_AM-removebg-preview (1).png') }}" alt="">
+                <h2 class="h-secoundry center">
+                    Cardiologist
+                </h2>
+                <p>Our Cardiology Department provides advanced diagnostic services like ECG, echocardiography, and stress testing, along with treatments. Combining cutting-edge technology with personalized care, we are dedicated to improving heart health and enhancing quality of life for our patients.</p>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/WhatsApp_Image_2025-01-09_at_5.18.51_AM-removebg-preview.png') }}" alt="">
+                <h2 class="h-secoundry center">
+                    Nephrologist
+                </h2>
+                <p>Our Nephrology Department specializes in diagnosing and treating kidney-related conditions, including chronic kidney disease, kidney stones, and hypertension. With advanced diagnostic tools and personalized care, we aim to preserve kidney function and enhance overall health.</p>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/WhatsApp_Image_2025-01-09_at_5.18.55_AM-removebg-preview.png') }}"alt="">
+                <h2 class="h-secoundry center">
+                   Neurologist
+                </h2>
+                <p>Our Neurology Department focuses on diagnosing and treating disorders of the brain, spinal cord, and nervous system. From migraines and epilepsy to stroke and neurodegenerative diseases, we provide expert care using advanced technology and personalized treatment plans.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact-Us</h1>
+        <div class="contact_us">
+            <form action="form">
+                <div class="nam">
+                    <label for="">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="em">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="text">
+                    <label for="">Message</label>
+                    <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="btn">
+                    <button  onclick="alert('Explore More Coming Soon!')" class="button">Submit</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <footer>
+        <footer id="footer">
+            <a href="#">FAQ</a>
+            <a href="#" target="_blank">Contact Us</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">privacy policy</a>
+            <a href="#">Refund policy</a>
+            <a href="#">&copy; 2024 | HMS</a>
+    
+        </footer>
+    
+    </footer>
+</body>
+</html>

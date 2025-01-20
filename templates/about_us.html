@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Doctor Online Appointment</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+    background: linear-gradient(to bottom, #f3e7e9, #e3eeff);
+            
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1s ease-in-out;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 4px 7px 10px rgb(74 72 65) ;
+        }
+        header p {
+            font-size: 1rem;
+            margin: 0.5rem 0 0;
+            text-shadow: 4px 7px 10px rgb(74 72 65) ;
+        }
+        section {
+            padding: 3rem 1.5rem;
+            text-align: center;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .content img {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: float 4s ease-in-out infinite;
+        }
+        .text {
+            max-width: 600px;
+            text-align: left;
+        }
+        .text h2 {
+            font-size: 2rem;
+            color: #4e54c8;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        .text h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: #673ab7;
+            margin-top: 0.5rem;
+            border-radius: 2px;
+        }
+        .text p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .text button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #4e54c8;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 0 4px 10px rgba(103, 58, 183, 0.3);
+        }
+        .text button:hover {
+            transform: scale(1.1);
+            color: #ffd700;
+         background-color: #8f94fb
+
+            
+        }
+        footer {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <p>Your health, our priority. Welcome to your trusted online appointment system.</p>
+    </header>
+
+    <section>
+        <div class="content">
+            <img src="{{ url_for('static', filename='images/img5-removebg-preview.png') }}"alt="Doctor Image"  >
+            <div class="text">
+                <h2>Who We Are</h2>
+                <p>
+                    Welcome to our Doctor Online Appointment platform! Our mission is to bridge the gap between patients and healthcare professionals by offering a seamless, convenient, and reliable appointment booking system. With just a few clicks, you can connect with highly qualified doctors from the comfort of your home.
+                </p>
+                <h2>Why Choose Us?</h2>
+                <p>
+                    Our platform is designed to prioritize your needs, providing: 
+                    <ul style="text-align: left; margin: 1rem auto; padding-left: 20px;">
+                        <li>24/7 appointment scheduling.</li>
+                        <li>Access to top-rated healthcare professionals.</li>
+                        <li>User-friendly interface and secure data management.</li>
+                        <li>Personalized care and follow-ups.</li>
+                    </ul>
+                </p>
+                <button onclick="alert('Explore More Coming Soon!')">Explore More</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Doctor Online Appointment. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

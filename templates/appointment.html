@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            
+            background: url("static/images/doc.jpeg") no-repeat center center/cover;
+             
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+            height: 100vh;
+
+
+        }
+
+        
+
+
+
+        #appointment-page {
+            
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            opacity: 0;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: whitesmoke;
+            opacity: 0;
+           
+            animation: slideInFromTop 1s ease-out forwards;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+            color: white;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        select:focus,
+        input:focus {
+            border-color: #4CAF50;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color:#00796b;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1ab99e;
+        }
+
+        /* Animation for the form appearance */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromTop {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        input,
+        select,
+        button {
+            opacity: 0;
+            animation: fadeInFields 1s ease-in-out forwards;
+        }
+
+        input:nth-child(1),
+        select:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        input:nth-child(2),
+        select:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        input:nth-child(3),
+        select:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        button {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes fadeInFields {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="appointment-page">
+        <header>
+            <h1>Book an Appointment</h1>
+        </header>
+        <form action="/appointment" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="dr_john">Dr. John Doe</option>
+                <option value="dr_jane">Dr. Jane Smith</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+
+</html>

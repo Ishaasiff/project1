@@ -1,0 +1,269 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+body{
+    background: linear-gradient(to bottom, #f3e7e9, #e3eeff);
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    padding: 12px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 12px;
+}
+
+#navbar a:hover {
+    color: #ffd700;
+}
+
+
+#login .btn {
+    margin-right: 26px;
+    text-decoration: none;
+    padding: 7px 21px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #4e54c8;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    box-shadow: 0 4px 10px rgba(0, 77, 64, 0.3);
+}
+
+#login .btn:hover {
+    color: #ffd700;
+    background-color: #8f94fb;
+}
+
+.logo {
+    font-size: 2.2rem;
+    display: inline-block;
+    color: #ffd700;
+    
+}
+
+
+
+/* #navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #004d40;
+    padding: 12px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 12px;
+}
+
+#navbar a:hover {
+    color: #80cbc4;
+}
+.login {
+    position: absolute;
+    right: 32px;
+    top: 10px;
+    display: inline-blockS;
+}
+.login {
+    position: absolute;
+    right: 32px;
+    top: 10px;
+    display: inline-block;
+}
+
+ */
+
+#welcome-section {
+    background: linear-gradient(
+                rgba(78, 84, 200, 0.7),
+                rgba(143, 148, 251, 0.7)
+            ),
+            url("../images/woman-working-as-doctor.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.heading h1 {
+    font-size: 3.8rem;
+    color: white;
+    text-shadow: 10px 12px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 26px;
+}
+
+.heading h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 10px 12px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 26px;
+}
+#shop h1{
+    
+    font-size: 2.5rem;
+    color: #4e54c8; /* Gradient color inspiration */
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    
+
+}
+
+#shop-item {
+    display: flex;
+    margin: 20px;
+}
+
+#shop-item .box {
+    border-radius: 9px;
+    background: linear-gradient(to bottom, #f3e7e9, #e3eeff);
+    border: none;
+    margin: 23px 16px;
+    padding: 25px;
+    box-shadow: 3px 14px 14px 2px #2e1010;
+    transition: transform 0.3s ease;
+}
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+
+}
+
+#shop-item .box img {
+    height: 165px;
+    display: block;
+    margin: auto;
+}
+
+#shop-item .box p {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+
+
+
+#contact {
+    text-align: center;
+    padding: 30px;
+    
+}
+
+#contact h1 {
+    font-size: 2.5rem;
+    color: #4e54c8; /* Gradient color inspiration */
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contact_us form {
+    max-width: 600px;
+    margin: 0 auto;
+   
+}
+
+.contact_us input,
+.contact_us textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #80cbc4;
+    border-radius: 5px;
+}
+
+.contact_us label {
+    font-size: 1.5rem;
+    color: #004d40;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    padding: 7px 21px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #4e54c8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 77, 64, 0.3);
+}
+
+button:hover {
+    transform: scale(1.1);
+    color: #ffd700;
+    background-color: #8f94fb
+}
+
+footer {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    text-align: center;
+    
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+
+
+.h-secoundry {
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: "Roboto Slab", serif;
+}
+.center {
+    text-align: center;
+} 
