@@ -1,5 +1,5 @@
 <h1>HOSPITAL MANAGEMENT SYSTEM (Appointment Booking)</h1>
-<b><i>What your application does</i></b>
+<b><i>What this application does</i></b>
 <p>This website is created to enable the patient book an appointment with their doctor.It was created aiming in mind to help the patient book appointment whenever they want with their choice of doctors.On the other hand it is also beneficial for doctors as they can accept or decline the appointmennts based on their schedule.</p>
 <b><i>Technologies Used</i></b>
 <div>
